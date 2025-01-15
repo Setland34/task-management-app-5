@@ -12,6 +12,7 @@
     ci = commit
     st = status
     lg = log --oneline --graph --decorate --all
+    pushfwl = push --force-with-lease
 
 # The 'commit.gpgsign' setting ensures that all commits are signed with a GPG key by default.
 # The 'user.signingkey' setting specifies the GPG key to be used for signing commits.

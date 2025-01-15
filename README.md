@@ -46,3 +46,11 @@ The `git rebase -i HEAD~<number_of_commits>` command is used to interactively re
 
 ## Configuring Git to Sign All Commits with a GPG Key
 To configure Git to sign all commits with a GPG key by default, use the following command:
+
+## Using `git push --force-with-lease`
+The `git push --force-with-lease` command is used to forcefully push changes to a remote repository while ensuring that no one else has pushed changes to the same branch since you last fetched. This is a safer alternative to `git push --force` as it prevents overwriting someone else's work.
+
+### Benefits of `--force-with-lease` over `--force`
+- Prevents accidental overwriting of changes made by others.
+- Ensures that your local branch is up-to-date with the remote branch before force-pushing.
+- Reduces the risk of losing important commits.
